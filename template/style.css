@@ -1,0 +1,88 @@
+
+body{
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0%;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: 'header','main','footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 4rem 1fr 3rem;
+    height:100vh;
+}
+header{
+    grid-area: 'header';
+    background-color: rgb(13, 87, 87);
+    font-size: 20px;
+}
+main{
+    grid-area: 'main';
+    padding: 0.65rem;
+}
+footer{
+    grid-area: 'footer';
+    background-color: rgb(13, 87, 87);
+    color: white;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: orange;
+}
+header a{
+    margin: 0.8rem;
+    color: white;
+}                 
+.brand a{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+}
+.row.center{
+    justify-content: center;
+}
+img{
+    border-radius: 0.3rem;
+}
+img.medium{
+    max-width: 18rem;
+    width:100%;
+    height: 21rem;
+}
+
+.card{
+    margin:0.63rem;
+    border: 1rem rgb(8, 8, 8);
+    border-radius: 0.3rem;
+}
+.card-body{
+    padding:0.5rem;
+    text-align: center;
+}
+.price{
+    font-size: 1.3rem;
+}
+.rating span{
+    color: #f0c040;
+    margin:1px;
+}
+h2{
+    font-size: 1.2rem;
+}
+.card a{
+    color: black;
+}
+.card a:hover{
+    color: chocolate;
+}
+.product-grid{
+    margin:0px 1.2rem;
+}
